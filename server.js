@@ -69,7 +69,7 @@ app.post("/api/bmi", async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 connectDB().then(() => {
   app.listen(port, () => {
